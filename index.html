@@ -20,10 +20,10 @@
     --text-faint: #4a4a47;
     --white: #f5f3ee;
   }
-
+ 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--black);
     color: var(--text);
@@ -32,7 +32,7 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
-
+ 
   body::before {
     content: '';
     position: fixed;
@@ -42,17 +42,17 @@
     z-index: 1000;
     opacity: 0.4;
   }
-
+ 
   h1, h2, h3, h4 {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.02em;
   }
-
+ 
   .container { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
   section { position: relative; }
-
+ 
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -77,7 +77,7 @@
     color: var(--text-dim); text-decoration: none; transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--amber); }
-
+ 
   /* HERO */
   .hero {
     min-height: 100vh; display: flex; align-items: center;
@@ -94,7 +94,7 @@
   }
   .hero-lines svg { width: 100%; height: 100%; }
   .hero-content { position: relative; z-index: 2; max-width: 720px; }
-
+ 
   .hero-tag {
     display: inline-flex; align-items: center; gap: 10px;
     font-family: 'IBM Plex Mono', monospace; font-size: 11px;
@@ -102,13 +102,13 @@
     margin-bottom: 32px; opacity: 0; animation: fadeUp 0.6s ease 0.2s forwards;
   }
   .hero-tag::before { content: ''; width: 32px; height: 1px; background: var(--amber); }
-
+ 
   .hero h1 {
     font-size: clamp(42px, 6vw, 76px); color: var(--white);
     margin-bottom: 28px; opacity: 0; animation: fadeUp 0.7s ease 0.35s forwards;
   }
   .hero h1 em { font-style: normal; color: var(--amber); }
-
+ 
   .hero-sub {
     font-size: 18px; color: var(--text-dim); max-width: 540px;
     margin-bottom: 52px; opacity: 0; animation: fadeUp 0.7s ease 0.5s forwards; line-height: 1.8;
@@ -117,7 +117,7 @@
     display: flex; gap: 16px; flex-wrap: wrap;
     opacity: 0; animation: fadeUp 0.7s ease 0.65s forwards;
   }
-
+ 
   .btn-primary {
     display: inline-flex; align-items: center; gap: 10px;
     background: var(--amber); color: var(--black);
@@ -126,7 +126,7 @@
     padding: 16px 32px; transition: all 0.2s; cursor: pointer; border: none;
   }
   .btn-primary:hover { background: var(--white); transform: translateY(-1px); }
-
+ 
   .btn-secondary {
     display: inline-flex; align-items: center; gap: 10px;
     border: 1px solid var(--border); color: var(--text-dim);
@@ -135,7 +135,7 @@
     text-decoration: none; padding: 16px 32px; transition: all 0.2s;
   }
   .btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
-
+ 
   /* STATS */
   .stats-bar {
     border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
@@ -160,7 +160,7 @@
     font-family: 'IBM Plex Mono', monospace; font-size: 10px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint);
   }
-
+ 
   /* SECTIONS */
   .section-pad { padding: 100px 0; }
   .section-tag {
@@ -171,7 +171,7 @@
   .section-tag::before { content: ''; width: 24px; height: 1px; background: var(--amber); }
   .section-title { font-size: clamp(32px, 4vw, 52px); color: var(--white); margin-bottom: 20px; }
   .section-intro { font-size: 18px; color: var(--text-dim); max-width: 580px; line-height: 1.8; }
-
+ 
   /* WHAT I DO */
   .what-grid {
     display: grid; grid-template-columns: 1fr 1fr;
@@ -194,7 +194,7 @@
   }
   .what-item h3 { font-size: 22px; color: var(--white); margin-bottom: 14px; font-weight: 700; }
   .what-item p { font-size: 15px; color: var(--text-dim); line-height: 1.7; }
-
+ 
   /* EDGE */
   .edge-section {
     background: var(--surface);
@@ -212,7 +212,7 @@
   }
   .edge-card h3 { font-size: 18px; color: var(--white); margin-bottom: 12px; font-weight: 700; }
   .edge-card p { font-size: 14px; color: var(--text-dim); line-height: 1.7; }
-
+ 
   /* WHY */
   .why-section {
     background: var(--black);
@@ -247,7 +247,7 @@
     font-family: 'IBM Plex Mono', monospace; font-size: 11px;
     color: var(--text-faint); letter-spacing: 0.08em; text-transform: uppercase;
   }
-
+ 
   /* CRITERIA */
   .criteria-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
   .criteria-card {
@@ -271,7 +271,7 @@
     flex-shrink: 0; margin-top: 1px;
   }
   .criteria-list.avoid li::before { content: '×'; color: #665533; }
-
+ 
   /* BACKGROUND */
   .bg-layout {
     display: grid; grid-template-columns: 1fr 1.2fr;
@@ -297,7 +297,7 @@
     font-family: 'IBM Plex Mono', monospace; font-size: 10px;
     color: var(--text-faint); letter-spacing: 0.05em; white-space: nowrap; text-align: right;
   }
-
+ 
   /* CONTACT */
   .contact-section {
     background: var(--surface);
@@ -315,7 +315,7 @@
     color: var(--text-dim); margin-bottom: 12px; letter-spacing: 0.03em;
   }
   .contact-detail span { color: var(--amber); }
-
+ 
   .contact-form { display: flex; flex-direction: column; gap: 16px; }
   .form-group { display: flex; flex-direction: column; gap: 8px; }
   .form-group label {
@@ -336,7 +336,7 @@
   .form-group select:focus,
   .form-group textarea:focus { border-color: var(--amber); }
   .form-group textarea { resize: vertical; min-height: 120px; }
-
+ 
   .form-submit {
     display: inline-flex; align-items: center; gap: 10px;
     background: var(--amber); color: var(--black);
@@ -347,14 +347,14 @@
   }
   .form-submit:hover { background: var(--white); transform: translateY(-1px); }
   .form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-
+ 
   .form-success {
     display: none; padding: 20px 24px;
     border: 1px solid var(--amber-dim); background: rgba(212,160,23,0.06);
     font-family: 'IBM Plex Mono', monospace; font-size: 13px;
     color: var(--amber); letter-spacing: 0.05em; margin-top: 8px;
   }
-
+ 
   /* FOOTER */
   footer { padding: 32px 0; border-top: 1px solid var(--border); }
   .footer-inner {
@@ -369,19 +369,19 @@
     font-family: 'IBM Plex Mono', monospace; font-size: 11px;
     color: var(--text-faint); letter-spacing: 0.04em;
   }
-
+ 
   .divider {
     width: 100%; height: 1px;
     background: linear-gradient(90deg, transparent, var(--border), transparent);
   }
-
+ 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
-
+ 
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .what-grid, .edge-grid, .criteria-grid { grid-template-columns: 1fr; }
@@ -395,7 +395,7 @@
 </style>
 </head>
 <body>
-
+ 
 <nav id="nav">
   <a href="#" class="nav-logo">UsmannAutomates</a>
   <ul class="nav-links">
@@ -405,10 +405,11 @@
     <li><a href="#looking">What I Buy</a></li>
     <li><a href="#background">Background</a></li>
     <li><a href="#audit" style="color:var(--amber)">Free Audit</a></li>
+    <li><a href="https://brief.usmannautomates.co.uk" target="_blank" style="color:var(--amber)">Newsletter</a></li>
     <li><a href="#contact">Get in Touch</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -451,7 +452,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- STATS -->
 <div class="stats-bar">
   <div class="container">
@@ -475,7 +476,7 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- WHAT I DO -->
 <section class="section-pad" id="what">
   <div class="container">
@@ -508,9 +509,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- THE EDGE -->
 <section class="section-pad edge-section" id="edge">
   <div class="container">
@@ -538,9 +539,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- WHY SELL TO ME -->
 <section class="section-pad why-section" id="why">
   <div class="container">
@@ -605,9 +606,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- CRITERIA -->
 <section class="section-pad" id="looking">
   <div class="container">
@@ -680,9 +681,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- BACKGROUND -->
 <section class="section-pad" id="background">
   <div class="container">
@@ -729,9 +730,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- FREE AUDIT TOOL -->
 <section class="section-pad" id="audit" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
   <div class="container">
@@ -774,9 +775,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <!-- CONTACT -->
 <section class="section-pad contact-section" id="contact">
   <div class="container">
@@ -837,22 +838,26 @@
     </div>
   </div>
 </section>
-
+ 
 <footer>
   <div class="container">
     <div class="footer-inner">
       <span class="footer-copy">2026 UsmannAutomates — usmannautomates.co.uk — Scotland, UK</span>
-      <span class="footer-note">Digital Business Acquisitions — Not financial or legal advice</span>
+      <span class="footer-note">
+        Digital Business Acquisitions — Not financial or legal advice
+        &nbsp;·&nbsp;
+        <a href="https://brief.usmannautomates.co.uk" target="_blank" style="color:var(--amber);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;">Free Newsletter →</a>
+      </span>
     </div>
   </div>
 </footer>
-
+ 
 <script>
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 40);
   });
-
+ 
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -863,11 +868,11 @@
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach(el => observer.observe(el));
-
+ 
   const form = document.getElementById('contactForm');
   const submitBtn = document.getElementById('submitBtn');
   const formSuccess = document.getElementById('formSuccess');
-
+ 
   form.addEventListener('submit', async (e) => {
     const action = form.getAttribute('action');
     if (action === 'FORMSPREE_ENDPOINT_HERE') return;
